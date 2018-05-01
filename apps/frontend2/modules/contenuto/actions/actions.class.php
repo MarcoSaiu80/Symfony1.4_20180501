@@ -89,6 +89,11 @@ public function executeForm($request)
         'name'=> new sfWidgetFormInputText())));
 
     //gestione della richiesta qua dentro
+    if($this->form->isValid())
+    {
+        $name=$this->form->getValue('name');
+
+    }
 }
 
 

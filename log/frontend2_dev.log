@@ -1962,3 +1962,22 @@ May 01 20:55:30 symfony [info] {sfWebDebugLogger} Factories 17.97 ms (1)
 May 01 20:55:30 symfony [info] {sfWebDebugLogger} Action "contenuto/form" 2.62 ms (1)
 May 01 20:55:30 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/form" 11.03 ms (1)
 May 01 20:55:30 symfony [info] {sfWebResponse} Send content (30209 o)
+May 01 21:28:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contenuto/elenco with parameters array (  'module' => 'contenuto',  'action' => 'elenco',)
+May 01 21:28:46 symfony [info] {myUser} Automatic user logout due to timeout
+May 01 21:28:46 symfony [info] {myUser} User is not authenticated
+May 01 21:28:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 01 21:28:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 01 21:28:46 symfony [info] {contenutoActions} Call "contenutoActions->executeElenco()"
+May 01 21:28:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 01 21:28:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT b.id AS b__id, b.title AS b__title, b.content AS b__content, b.created_at AS b__created_at, b.updated_at AS b__updated_at FROM blog_article b - ()
+May 01 21:28:46 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\modules/contenuto/templates/elencoSuccess.php"
+May 01 21:28:46 symfony [info] {sfPHPView} Decorate content with "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 01 21:28:46 symfony [info] {sfPHPView} Render "C:\xampp5\htdocs\sf2\apps\frontend2\templates/layout.php"
+May 01 21:28:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 01 21:28:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 01 21:28:46 symfony [info] {sfWebDebugLogger} Configuration 47.44 ms (10)
+May 01 21:28:46 symfony [info] {sfWebDebugLogger} Factories 19.15 ms (1)
+May 01 21:28:46 symfony [info] {sfWebDebugLogger} Action "contenuto/elenco" 19.43 ms (1)
+May 01 21:28:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+May 01 21:28:46 symfony [info] {sfWebDebugLogger} View "Success" for "contenuto/elenco" 9.75 ms (1)
+May 01 21:28:46 symfony [info] {sfWebResponse} Send content (33375 o)
